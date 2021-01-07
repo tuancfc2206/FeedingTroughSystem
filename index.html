@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+  <script src="./index.js"></script>
+  <script src="./utilities.js"></script>
+  <script src="./table.js"></script>
+  <script src="./farm.js"></script>
+  <script src="./pig.js"></script>
+  <title>Farm</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="farm"></div>
+    <div class="table-wrapper">
+      <div>
+        <table id="table-1">
+          <tr>
+            <th>Trough Feeding ID</th>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <th>Amount of Food</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Pig ID</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div>
+        <table id="table-2">
+          <tr>
+            <th>ID</th>
+            <th>Weight (kg)</th>
+            <th>Eaten Today (g)</th>
+            <th>Remain (g)</th>
+            <th>Cumulative</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="event-wrapper">
+      <div>
+        <span id="day"> </span>
+
+        <input
+          id="delete-id"
+          type="number"
+          placeholder="Enter ID to delete"
+        />
+        <div class="button-wrapper">
+          <button id="weigh">Weigh</button>
+          <button id="next-day">To Next Day</button>
+          <button id="reset">Reset</button>
+          <button id="add">Add</button>
+          <button id="delete">Delete</button>
+        </div>
+      </div>
+      <form class="form-container" id="edit-form">
+        <div class="header">Edit Form</div>
+        <input name = 'id' class="input-wrapper" type="number" placeholder="Enter Pig ID" />
+        <input
+          class="input-wrapper"
+          type="number"
+          placeholder="Enter Weight (kg)"
+          name = 'weight'
+        />
+        <input
+          class="input-wrapper"
+          type="number"
+          placeholder="Enter Remain (g)"
+          name = 'remain'
+        />
+        <input
+          class="input-wrapper"
+          type="number"
+          placeholder="Enter Eaten (g)"
+          name = 'eaten'
+        />
+        <input type = 'submit' class="input-wrapper" value="Edit"> 
+      </form>
+    </div>
+  </div>
+</body>
